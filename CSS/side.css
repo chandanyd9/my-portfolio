@@ -1,0 +1,331 @@
+/* font style */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+#sidebar {
+  height: 100vh;
+  width: 20%;
+  background-color: #040b14;
+  position: fixed;
+}
+#conatiner {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#profile {
+  height: 200px;
+  /* background-color: blue; */
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+#profile #imag {
+  height: 120px;
+  width: 120px;
+  background:
+    linear-gradient(rgba(27, 44, 193, 0), rgba(27, 44, 193, 0.4)),
+    url("../images/profile_photo.png");
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid rgb(27, 44, 193);
+  margin: auto;
+}
+#profile h3 {
+  margin-top: 15px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Comic Relief", system-ui;
+  /* font-family: "Roboto", sans-serif; */
+}
+#sidebar #icon {
+  /* background-color: aqua; */
+  /* height: 100px; */
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 15px;
+}
+#sidebar #icon li a i {
+  background-color: rgb(26, 39, 56);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+#sidebar #icon li i:hover {
+  background-color: #1b2cc1;
+}
+#sidebar #tab {
+  min-height: 440px;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20px;
+}
+#sidebar #tab a {
+  color: rgb(164, 178, 197);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+#sidebar ul {
+  list-style: none;
+  color: rgb(163, 176, 192);
+}
+#sidebar #tab li:hover {
+  color: rgba(9, 9, 244, 0.792);
+}
+#sidebar #tab li:hover a {
+  color: white;
+  background-color: rgba(27, 44, 193, 0.4);
+  padding: 2px 100px 2px 5px;
+  border-radius: 10px;
+}
+#other {
+  width: 100%;
+  padding-left: 20%;
+}
+#bg {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg4.jpeg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+#bg #line {
+  height: 3px;
+  width: 50px;
+  background-color: #1b2cc1;
+}
+#bg .title {
+  width: 45%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+  color: #f7f2eb;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  padding: 0px 60px;
+}
+#bg h2 {
+  font-size: 70px;
+  margin: 5px 0px;
+  font-family: "Comic Relief", system-ui;
+}
+#bg p {
+  font-family: "Comic Relief", system-ui;
+}
+#bg #p1 {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#bg #p2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+#bg #p3 {
+  font-weight: normal;
+  color: #9fb7bb;
+}
+#intro {
+  height: 93vh;
+  width: 100%;
+  /* background-color: wheat; */
+}
+#intro .about {
+  height: 25%;
+  /* background-color: red; */
+}
+#intro .about h3 {
+  font-size: 40px;
+  padding: 20px 10px;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+}
+#intro .about p {
+  font-size: 22px;
+  padding-left: 10px;
+  font-weight: 400;
+  color: #1e252d;
+  font-family: "Lora", serif;
+}
+#intro .alldetails {
+  height: 75%;
+  /* background-color: rgb(100, 32, 216); */
+  /* margin-top: 50px; */
+  display: flex;
+  align-items: center;
+}
+#intro .alldetails .details {
+  height: 400px;
+  padding-left: 20px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-content: center; */
+}
+#intro .alldetails .photo {
+  min-width: 400px;
+  height: 400px;
+  background: url("../images/profile_photo.png");
+  background-size: cover;
+}
+#intro .alldetails .info {
+  height: 150px;
+}
+#intro .alldetails h3 {
+  /* color: aliceblue; */
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+}
+#intro .alldetails p {
+  font-size: 1.2rem;
+}
+#intro a {
+  font-family: "Crimson Text", serif;
+}
+#intro .alldetails tr {
+  font-size: 1.5rem;
+  font-family: "Faustina", serif;
+}
+#intro #pi {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #810b38;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+#intro #icon {
+  list-style: none;
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
+  font-size: 30px;
+}
+#intro #icon a {
+  text-decoration: none;
+  color: black;
+  margin-left: 25px;
+}
+#intro #icon #wp {
+  color: #25d366;
+}
+#intro #icon #ld {
+  color: #0a66c2;
+}
+#skills {
+  max-height: 70vh;
+  background-color: rgb(222, 229, 232);
+  padding: 15px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#skills h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #09e459;
+  font-family: "Oleo Script", system-ui;
+}
+#skills .srtip {
+  height: 10px;
+  background-color: #0a66c2;
+  margin-bottom: 60px;
+}
+#skills #html {
+  width: 95%;
+}
+#skills .grayhtml {
+  height: 10px;
+  width: 5%;
+  background-color: lightgray;
+  margin-bottom: 60px;
+  float: right;
+}
+#skills .graycss {
+  height: 10px;
+  width: 10%;
+  background-color: lightgray;
+  margin-bottom: 60px;
+  float: right;
+}
+#skills .grayjs {
+  height: 10px;
+  width: 30%;
+  background-color: lightgray;
+  margin-bottom: 60px;
+  float: right;
+}
+#skills #p {
+  font-weight: 900;
+  /* font-size: 20px; */
+}
+#project {
+  width: 100%;
+  height: 70vh;
+  background-color: #39b1d1;
+  display: flex;
+  /* text-align: center; */
+}
+#projectHead {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 100px;
+  color: #ff9100;
+  font-family: "Caveat", cursive;
+}
+#project button {
+  padding: 10px;
+  margin: 20px;
+  font-weight: 500;
+  color: #2f39a9;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+#project caption {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Geist Mono", monospace;
+}
+
+#project #box1,
+#box2 {
+  width: 50%;
+  height: 100%;
+  /* background-color: rgb(28, 197, 62); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#project #box2 {
+  width: 50%;
+  /* background-color: rgb(215, 6, 6); */
+}
+#project button:hover {
+  background-color: #1b2cc1;
+  /* padding: 15px; */
+  /* font-size: 1rem; */
+  color: whitesmoke;
+}

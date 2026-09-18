@@ -1,0 +1,334 @@
+/* ===================================================
+   MOBILE RESPONSIVE OVERRIDES
+   =================================================== */
+
+@media (max-width: 767px) {
+
+  /* Prevent horizontal scroll + consistent box model — ONLY on mobile */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* ---------- GLOBAL / CONTAINER ---------- */
+  #conatiner {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  /* ---------- SIDEBAR -> TOP HEADER ---------- */
+  #sidebar {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile {
+    height: auto;
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #profile #imag {
+    height: 80px;
+    width: 80px;
+  }
+
+  #profile h3 {
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+
+  #sidebar #icon {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  #sidebar #icon li a i {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #sidebar #tab {
+    min-height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    gap: 6px;
+    width: 100%;
+  }
+
+  #sidebar #tab li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  #sidebar #tab a {
+    font-size: 0.95rem;
+    padding-left: 4px;
+  }
+
+  #sidebar #tab li:hover a {
+    padding: 2px 8px;
+  }
+
+  /* ---------- MAIN CONTENT AREA ---------- */
+  #other {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+  #bg {
+    height: auto;
+    min-height: 70vh;
+    padding: 30px 0;
+  }
+
+  #bg .title {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #bg #line {
+    margin: 0 auto;
+  }
+
+  #bg h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  #bg #p1 {
+    margin-left: 0;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  #bg #p2 {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+  }
+
+  #bg #p3 {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  /* ---------- ABOUT SECTION ---------- */
+  #intro {
+    height: auto;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #intro .about {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  #intro .about h3 {
+    font-size: clamp(1.6rem, 6vw, 2rem);
+    padding: 10px 0;
+  }
+
+  #intro .about p {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  #intro .alldetails {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #intro .alldetails .photo {
+    min-width: 0;
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+    margin: 0 auto;
+  }
+
+  #intro .alldetails .details {
+    height: auto;
+    width: 100%;
+    padding: 20px 0 0 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  #intro .alldetails h3 {
+    font-size: 1.8rem;
+  }
+
+  #intro .alldetails p {
+    font-size: 1rem;
+  }
+
+  #intro #pi {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Personal info table -> stacked cards */
+  #intro .alldetails .info {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
+  #intro .alldetails table.info,
+  #intro .alldetails table.info tbody {
+    display: block;
+    width: 100%;
+  }
+
+  #intro .alldetails table.info tr {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  #intro .alldetails table.info td {
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+    word-break: break-word;
+  }
+
+  #intro #icon {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 22px;
+  }
+
+  #intro #icon a {
+    margin-left: 0;
+    font-size: 0.95rem;
+  }
+
+  /* ---------- SKILLS ---------- */
+  #skills {
+    max-height: none;
+    padding: 20px 15px;
+  }
+
+  #skills h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  /* <pre> uses hard-coded spaces for layout — can't restructure without
+     touching HTML, so we shrink it and let only this element scroll
+     horizontally instead of the whole page. */
+  #skills #p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    font-size: 0.75rem;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  #skills .srtip {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  #skills #html {
+    width: 100%;
+  }
+
+  /* ---------- PROJECTS ---------- */
+  #projectHead {
+    height: auto;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    padding: 20px 0;
+  }
+
+  #project {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  #project #box1,
+  #project #box2 {
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+
+  #project table#table1 {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  #project caption {
+    font-size: 1.4rem;
+    word-wrap: break-word;
+  }
+
+  #project table#table1 tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #project table#table1 td {
+    width: 100%;
+  }
+
+  #project button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    font-size: 1rem;
+    min-height: 44px; /* touch target */
+  }
+}
+
+/* ---------- EXTRA SMALL SCREENS ---------- */
+@media (max-width: 480px) {
+  #bg h2 {
+    font-size: clamp(1.8rem, 12vw, 2.4rem);
+  }
+
+  #intro .alldetails .photo {
+    height: 260px;
+  }
+
+  #skills #p {
+    font-size: 0.65rem;
+  }
+
+  #project table#table1 {
+    width: 100%;
+  }
+
+  #project caption {
+    font-size: 1.2rem;
+  }
+}
